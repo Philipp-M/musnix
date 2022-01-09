@@ -4,5 +4,6 @@
     outputs = { self, nixpkgs }: {
         nixosModules.musnix = import ./default.nix;
         nixosModule = self.nixosModules.musnix;
+        overlays = import ./overlay.nix;
     };
 }
