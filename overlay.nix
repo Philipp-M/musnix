@@ -49,6 +49,7 @@ with lib;
     kernelPatches = [
       super.kernelPatches.bridge_stp_helper
       self.realtimePatches.realtimePatch_5_15
+      self.realtimePatches.exportRtSchedMigrate
     ];
   };
 
@@ -56,6 +57,7 @@ with lib;
     kernelPatches = [
       super.kernelPatches.bridge_stp_helper
       self.realtimePatches.realtimePatch_6_0
+      self.realtimePatches.exportRtSchedMigrate
     ];
   };
 

@@ -21,4 +21,8 @@ in {
   realtimePatch_5_4  = realtimePatch metadata."5.4";
   realtimePatch_5_15 = realtimePatch metadata."5.15";
   realtimePatch_6_0  = realtimePatch metadata."6.0";
+  exportRtSchedMigrate = {
+    name = "export-rt-sched-migrate";
+    patch = ./export-rt-sched-migrate.patch;
+  };
 }
